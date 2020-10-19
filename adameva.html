@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>adam và eva</title>
+
+</head>
+<body>
+<script src="human.js"></script>
+<script src="apple.js"></script>
+<script>
+    let apple = new Apple();
+    let adam = new Human('adam', 'true',30)
+    let eva = new Human('eva', 'false', 20)
+    adam.eat(apple);
+    eva.eat(apple);
+
+    setInterval(eat, 10)
+
+    function eat() {
+        adam.eat(apple)
+        adam.getMaxWeight();
+        console.log(adam.getWeight())
+        eva.eat(apple)
+        eva.getMaxWeight();
+        console.log(eva.getWeight())
+    }
+
+</script>
+</body>
+</html>
